@@ -1,0 +1,170 @@
+     
+
+      nav {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          /* FIX */
+
+          height: 80px;
+          padding: 0 50px;
+
+          background-color: rgb(6, 54, 36);
+          z-index: 1000;
+          /* pointer-events: none; */
+          /* 🔒 disables all clicks */
+          opacity: 0.95;
+      }
+
+      /* Left brand */
+      .left {
+          font-size: 1.5rem;
+          font-weight: 600;
+          white-space: nowrap;
+      }
+
+      /* Right nav container */
+      .right ul {
+          display: flex;
+          align-items: center;
+          gap: 32px;
+      }
+
+      /* Nav list */
+      nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      /* Nav links */
+      nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 1rem;
+          transition: color 0.25s ease, transform 0.25s ease;
+      }
+
+      nav ul li a:hover {
+          color: rgb(153, 153, 226);
+          transform: translateY(-1px);
+      }
+
+      /* Hamburger (hidden for now, future-proof) */
+      .menu-toggle {
+          display: none;
+          flex-direction: column;
+          cursor: pointer;
+      }
+
+      .bar {
+          height: 3px;
+          width: 25px;
+          background-color: white;
+          margin: 4px 0;
+          border-radius: 5px;
+      }
+
+      .menu-toggle {
+          display: none;
+          flex-direction: column;
+          cursor: pointer;
+      }
+
+      .login-container {
+          width: 100%;
+          max-width: 420px;
+          background: #071b14;
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          border-radius: 14px;
+          padding: 32px;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+      }
+
+      .login-container h2 {
+          text-align: center;
+          margin-bottom: 6px;
+          font-size: 26px;
+      }
+
+      .login-container p {
+          text-align: center;
+          margin-bottom: 28px;
+          color: #b7e4c7;
+          font-size: 14px;
+      }
+
+      .field {
+          margin-bottom: 18px;
+      }
+
+      .field label {
+          display: block;
+          margin-bottom: 6px;
+          font-size: 14px;
+          color: #c7f9cc;
+      }
+
+      .field input {
+          width: 100%;
+          padding: 12px 14px;
+          border-radius: 8px;
+          border: none;
+          outline: none;
+          font-size: 14px;
+      }
+
+      .field input:focus {
+          outline: 2px solid #1b9e77;
+      }
+
+      .login-btn {
+          width: 20%;
+          padding: 12px;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          background: linear-gradient(135deg, #1b9e77, #2ecc71);
+          color: #022c22;
+          font-weight: 700;
+          font-size: 15px;
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .login-btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 20px rgba(46, 204, 113, 0.35);
+      }
+
+      .login-wrapper {
+          flex: 1;
+          /* take remaining height */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-top: 80px;
+          /* same as nav height */
+
+          align-items: center;
+          padding-top: 80px;
+          /* navbar height */
+          gap: 20px;
+          height: 100vh;
+      }
+
+      .footer-text {
+          margin-top: 18px;
+          text-align: center;
+          font-size: 13px;
+          color: #95d5b2;
+      }
+
+      .footer-text span {
+          color: #2ecc71;
+          font-weight: 600;
+      }
